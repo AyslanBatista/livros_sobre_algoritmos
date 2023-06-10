@@ -23,7 +23,7 @@ def pesquisa_binaria(lista, item):
         chute = lista[meio]
         # Acha o item
         if chute == item:
-            return meio
+            return chute
         # Chute foi muito alto
         if chute > item:
             alto = meio - 1
@@ -34,8 +34,9 @@ def pesquisa_binaria(lista, item):
     return None
 
 
-minha_lista = [1, 3, 5, 7, 9]
+minha_lista = [1, 3, 5, 7, 9, 10, 11, 12]
+# breakpoint()
 
 # Lembre-se, as listas começam no 0. O próximo endereço tem índice 1.
-print(pesquisa_binaria(minha_lista, 3))  # 1
+print(pesquisa_binaria(minha_lista, 12))  # 12
 print(pesquisa_binaria(minha_lista, -1))  # None
