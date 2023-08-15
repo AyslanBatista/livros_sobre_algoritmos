@@ -13,7 +13,7 @@ if chute < item:
 
 
 def pesquisa_binaria(lista, item):
-    # baixo e talto acompanham a parte da lista que você está prcurando
+    # baixo e alto acompanham a parte da lista que você está prcurando
     baixo = 0
     alto = len(lista) - 1
     # enquanto ainda não conseguiu chegar a um único elemento

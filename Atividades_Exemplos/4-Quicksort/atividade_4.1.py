@@ -1,10 +1,15 @@
-def soma(lista: list) -> int:
-    if lista == []:
+"""
+Escreva o código para a função soma, vista anteriormente
+"""
+
+
+def soma(valores):
+    if valores == []:
         return 0
-    breakpoint()
-    # Retorna a soma do primeiro objeto
-    return lista[0] + soma(lista[1:])
+    else:
+        x = valores.pop(-1)
+        return x + soma(valores)
 
 
-lista = [1, 2, 3, 4, 5]
+lista = [2, 4, 6]
 print(soma(lista))

@@ -3,3 +3,6 @@ def fat(x):
         return 1
     else:
         return x * fat(x - 1)
+
+
+fat(5)
