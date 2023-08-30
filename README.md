@@ -1,6 +1,6 @@
 # Livros Sobre Algoritmos
 
-## Entendendo Algoritmos: Um guia ilustrado para programadores e outros curiosos
+## 1- Entendendo Algoritmos: Um guia ilustrado para programadores e outros curiosos
 <a href="https://www.amazon.com.br/Entendendo-Algoritmos-Ilustrado-Programadores-Curiosos/dp/8575225634"><img src="https://m.media-amazon.com/images/I/517I6z9QK4L._SX357_BO1,204,203,200_.jpg"></a>
 
 Aditya Y. Bhargava (Autor) 
@@ -8,7 +8,7 @@ Aditya Y. Bhargava (Autor)
 <h3><a href="https://www.amazon.com.br/Entendendo-Algoritmos-Ilustrado-Programadores-Curiosos/dp/8575225634">Link para o Livro:</a></h3>
 https://www.amazon.com.br/Entendendo-Algoritmos-Ilustrado-Programadores-Curiosos/dp/8575225634
 
-## Algoritmos e Lógica de Programação: Um Texto Introdutório para a Engenharia - 3ª edição
+## 2- Algoritmos e Lógica de Programação: Um Texto Introdutório para a Engenharia - 3ª edição
 
 <a href="https://www.amazon.com.br/Algoritmos-L%C3%B3gica-Programa%C3%A7%C3%A3o-Introdut%C3%B3rio-Engenharia-ebook/dp/B09N7WWLQH"><img src="https://m.media-amazon.com/images/I/51ciHygDe9L.jpg"></a>
 
@@ -17,7 +17,7 @@ Marco Souza (Autor), Marcelo Gomes (Autor), Marcio Soares (Autor), Ricardo Conci
 <h3><a href="https://www.amazon.com.br/Algoritmos-L%C3%B3gica-Programa%C3%A7%C3%A3o-Introdut%C3%B3rio-Engenharia-ebook/dp/B09N7WWLQH">Link para o Livro:</a></h3>
 https://www.amazon.com.br/Algoritmos-L%C3%B3gica-Programa%C3%A7%C3%A3o-Introdut%C3%B3rio-Engenharia-ebook/dp/B09N7WWLQH
 
-## Algoritmos
+## 3- Algoritmos
 
 <a href="https://www.amazon.com.br/Algoritmos-AUGUSTO-NAVARRO-GARCIA-MANZANO-ebook/dp/B07XHP2XML"><img src="https://m.media-amazon.com/images/I/51JyDHSDxhL.jpg"></a>
 
