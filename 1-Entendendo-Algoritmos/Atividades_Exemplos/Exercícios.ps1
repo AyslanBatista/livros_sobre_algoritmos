@@ -23,3 +23,44 @@ Exercícios:
 
 2.5 ''' Será mais rapido que array e lista '''
 
+3.1 ''' SAUDA 2'''
+
+3.2 ''' Computador ficará sem memoria, e isso irá travar todo o sistema.'''
+
+4.5 '''O('n') '''
+
+4.6 '''O('n')'''
+
+4.7 ''' O(1)'''
+
+4.8 ''' O(n²) '''
+
+5.1 '''Consistente '''
+
+5.2 '''Inconsistente '''
+
+5.3 '''Inconsistente '''
+
+5.4 '''Consistente '''
+
+5.5 '''D'''
+
+5.6 '''B'''
+
+5.7 '''C'''
+
+6.1 '''2'''
+
+6.2 '''1'''
+
+6.3 '''Invalidas'''
+
+6.4 '''
+1-Acordar
+2-Embrulhar o Lanche
+3-Escovar
+4-Praticar exercício
+5-Tomar Banho
+6-Tomar Café da Manhã
+7-Trocar de Roupa
+'''
