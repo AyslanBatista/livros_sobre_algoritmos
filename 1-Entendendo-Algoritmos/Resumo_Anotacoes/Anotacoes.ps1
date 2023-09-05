@@ -172,7 +172,7 @@ Boa função hash distribui os valores no array simetricamente
 1- Modelo o problema utilizando grafos
 2- Resolva o problema utilizando a pesquisa em largura
 
-#GRAFOS
+#Dígrafo, as relações seguem a direção das setas
 Vértice    aresta
  ______             ______ 
 | ALEX | _________>| RAMA |
@@ -193,13 +193,16 @@ Duas operações são possíveis
 Pilha = LIFO (Ultimo a entrar, primeiro a sair)
 Fila = FIFO (Primeiro a entrar, primeiro a sair)
 
+=A lista de pesquisa deve ser uma fila, caso contrário você não obterá o caminho mínimo
+
 Como expressar uma relação do tipo"você->bob"?
 "TABELA HASH"
 
 Não importa em que ordem você adiciona os pares chave/valor.
 Pois as tabelas hash não são ordenadas
 
-um grafo não direcionado (ou simplesmente grafo) não contém setas
+=="""GRAFOS NÃO DIRECIONADOS"""==
+um grafo não direcionado não contém setas, e as relações acontece nos dois sentidos
 
 Pode ocorrer de adicionar duas vezes na lista a mesma pessoa
 Verificá-la duas vezes será perda de tempo, Dessa forma, ao verificar uma pessoa,
@@ -211,4 +214,200 @@ Além disso, também terá uma lista de pessoas verificadas, adicionar uma pesso
 leva um tempo constante O(1) fazer isso para cada pessoa O(número de pessoas)
 a pasquisa em largura tem tempo de execução:
 ="O(número de pessoas + número de arestas) O(V+A)"=
+
+===================================================** ''' CAPITULO 7 ''' **===================================================
+===***'''Algoritmo de Dijkstra'''***=== # determina caminho mínimo até X para grafos ponderados
+Algoritmo de Dijkstra só funciona com grafos acíclicos dirigidos
+Você não pode usar o algoritmo de Disjkstra se você tiver arestas com peso negativo
+
+1- Encontre o vértice mais "barato", aquele que tem o menor tempo possível
+2- atualize o custo/valor dos vizinhos deste vértice
+3- Repita até que tenha feito isso para cada vértice
+4- Calcule o caminho final
+
+Um grafo com pesos é chamado de grafo ponderado(grafo valorado)
+Um grafo sem pesos é chamado de grafo não ponderado(grafo não valorado)
+
+Ciclos indicam que é possível começar em um vértice, viajar ao redor dele e
+terminar no mesmo vértice
+
+Passos:
+-faça uma tabela com custo de cada vértice, registrando o quanto você gasta em cada vértice
+-você continuará atualizando esta tabela conforme o algoritmo for executado, para calcular o caminho final
+-se o valor que foi atuliazado for menor, ele entrará como PAI na tabela
+
+Este exemplo por objetivo mostrar que o caminho mínimo não precisa ser somente uma distância
+física, mas que ele também envolve como reduzir algo, que nesse caso reduzir quantidade
+
+
+='''Algoritmo de Bellman-Ford'''*= #Algoritmo específico para arestas com pesos negativos
+
+===================================================** ''' CAPITULO 8 ''' **===================================================
+===***'''Algoritmos gulosos'''***=== # Uma estratégia muito simples para resolver problemas
+Deve escolher a que acaba mais cedo primeiro. Em termos técnicos:
+a cada etapa, escolhe-se a solução ideal, e no fim você tem uma solução global ideal
+
+Em alguns casos, tudo que vocẽ precisa é de um algoritmo que resolva o problema
+de uma maneira muito boa. E ai que os algoritmos gulosos entram, pois eles são
+simples de escrever e normalmente chegam bem perto da solução perfeita.
+
+Calcular possíveis subconjunto de estações é muito longo, tempo de execução O(2n^n)
+pois existem 2^n subconjunto
+
+='''Algoritmo de aproximação'''*=
+Quando é necessário muito tempo para calcular a solução exata, um algoritmo de
+aproximação é uma boa ideia e funcion.
+- por sua rapidez
+- pela capacidade de chegar a solução ideal
+
+==Algoritmo Exato O(n!)
+==Algoritmo Guloso O(n2)
+
+===**"""Problemas NP-Completos"""**===
+Tanto o problema do caxeiro-viajante quanto ao problema da cobertura de conjuntos
+têm algo em comum: Calcula-se cada solução possível e escolhe-se a menor.
+
+É sempre bom saber se o problema que você está tentando resolver é NP-completo,
+pois nesta situação você pode para de tentar resolvê-lo perfeitamente e, em vez
+disso, resolvê-lo usando um algoritmo de aproximação.
+
+A resposta simples é:
+Não há uma maneira fácil de dizer se o problema em que você está trabalhando é 
+NP-completo. Aqui alguns indicativos:
+- Seu algortimo roda rápido para alguns itens, mas fica muito lento com o aumento de itens
+- "Todas as combinações de X" geralmente significam um problema NP-completo
+- Você tem de calcular "cada possível versão" de X porque não pode dividir em subproblemas menores? Talvez seja um problema NP-completo
+- Se o seu problema envolve uma sequência ( como uma sequência de cidades, como o problema do caixeiro-viajante) e é dificil de resolver, pode ser um NP-completo
+- Se o seu problema envolve um conjunto (como um conjunto de estações de radio) e é dificil de resolver, ele pode ser um problema NP-completo
+- Você pode reescrever o seu problema como problema de cobertura mínima de conjuntos ou o problema do caixeiro-viajante? Então seu problema definitivamente é NP-completo
+
+===================================================** ''' CAPITULO 9 ''' **===================================================
+===***'''Programação dinâmica'''***=== # Técnica para resolução de problemas complexos que se baseia na divisão de problema em subproblemas
+
+- A programação dinamica é util quando você está tentando otimizar algo em relação a um limite
+- Você pode utilizar a programação dinâmica quando o problema puder ser dividido em subproblemas
+- Todas as soluções em programação dinâmica envolvem uma tabela.
+- Os valores nas células são, geralmente, o que você está tentando otimizar
+- Cada célula é um subproblema, então pense sobre como é possível dividir este subproblema em outros subproblemas.
+- Não existe uma formula unica para calcular uma solução em programação dinamica
+
+Programção dinâmica é uma ferramenta poderosa para resolver subproblemas utilizando
+respostas para resolver um problema geral. Porém a programação dinâmica só funciona
+quando os seus subproblemas são discretos, ou seja, quando eles não são dependentes 
+entre si.
+
+Identificação do problema em programção dinâmica:
+- A programação dinâmica é útil quando você está tentando otimizar em relação a um limite,
+no problema da mochila, era necessario maximizar o valor dos itens roubados, limitados pela capacidade da mochila
+
+- Você pode utilizar a programação dinamica quando o problema puder ser separado em subproblemas
+discretos que não dependam um do outro.
+
+-Toda solução de programação dinamica evolve uma tabela
+-Os valores nas células são, geralmente, o que você está tentando otimizar, para o problema
+da mochila, os valores nas celulas eram os valores dos itens
+- Cada célula é um subproblema, portanto, pense em como voce pode dividi-lo em
+outros subproblemas, pois isso lhe ajudará a descobrir quais são os seus eixos
+
+===================================================** ''' CAPITULO 10 ''' **===================================================
+===***'''K-vizinhos mais próximos'''***=== # Como prever um número, como estará o valor da bolsa de valores amanhã
+Se você estiver tentando classificar alguma coisa, talvez seja uma boa ideia tentar usa-lo primeiro
+
+Ao trabalhar com o algoritmo dos k-vizinhos mais próximos, é muito importante escolher as
+características certas a serem comparadas, que são:
+- Características diretamente correlacionadas aos filmes que você está tentando recomendar.
+- Características imparciais ( se as únicas opções fornecidas aos usuários forem filmes de comédia,
+esta avaliação não fornecerá nenhuma informação útil sobre o gosto dos usuários em relação a filmes de ação por exemplo.)
+
+- Classificação = classificar em grupos
+- Regressão = adivinhar uma resposta (como um número)
+- O algoritmo dos k-vizinhos mais próximos é utilizado na classificação e também
+na regressão, Ele envolve observar os K-vizinhos mais próximos.
+- Extrair caracteristicas significa converter um item (como uma fruta ou um usuario)
+em uma lista de números que podem ser comparados
+- Escolher boas características é uma parte importante para que um algoritmo dos 
+k-vizinhos mais próximos opere corretamente
+
+
+===================================================** ''' CAPITULO 11 ''' **===================================================
+===***'''Avore Binaria'''***=== 
+Arvore binario de busca é rapida para inserções e remoções, em média
+
+#         array       arvore binaria de busca
+Busca   |  O(log n)  |   O(log n)
+inserção|  O(n)      |   O(log n)
+Remoção |  O(n)      |   O(log n)
+
+Arvore binaria de busca tem desvantagens:
+Não é possível utilizar acesso aleatório, isso faz com que seja impossível dizer:
+"Me de o quinto elemento desta arvore"
+
+Para arvores binaria de buscar tem um bom desempenho de meia, ela deve estar balanceada
+
+As arvores B, um tipo espical de arvore binaria, são comumente usadas para armazenar dados em banco de dados.
+
+===***'''Índices invertidos'''***=== 
+Uma hash que mapeia palavras para lugares onde elas aparecem. Esa estrutura é muito
+usada na contrução de ferramentas de busca
+
+===***'''A transformada de Fourier'''***=== 
+Usada no funcionamento do formato MP3:
+Primeiro a música é separada em suas notas individuais. Então a transformada de Fourier
+informa o quanto exatamente cada nota contruibui para a música como um todo. Sabendo disso
+é possível eliminar notas que não são importante para a música.
+
+===***'''Algoritmos paralelos'''***=== 
+Se você tem dois núcloes no seu notebook em vez de somente um, isso quase nunca
+significa que seu algoritmo será duas vezes mais rápido. Motivos:
+- Gerenciamento do paralelismo - Imagine que você deve ordenar um array de 1.000 itens.
+Como vocẽ divide esta tarefa entre dois núcleos? Você fornece 500 itens para cada núcleo
+ordenar e então une ambos os arrays ordenados em um grande array? Unir os arrays leva tempo
+
+- Balanceamento de carga - Suponha que você tenha dez tarefas que devam ser executadas e,
+portanto cada núcleo receba cinco tarefas. Porém o núcleo A recebe todas as tarefas simples
+e as finaliza em dez segundos, enquanto o núcleo B recebe todas as tarefas complexas e leva um minuto.
+Ou seja, o núcleo A ficou parado durante cinquenta segundos enquanto o núcleo B esteve fazendo
+todo o trabalho duro!
+
+===***'''MapReduce'''***=== 
+Algoritmo distribuido popular que pode ser usado no framework livre Apache Hadoop
+O MapReduce é baseado em duas ideia simples: a função map (mapa) e a função reduce (reduzir)
+
+===***'''Função map'''***=== 
+A função map é muito simples, ela pega um array e aplica a mesma função para cada item no array
+
+Não seria ótimo ter cem máquinas, sabendo que a função map poderia dividir automaticamente
+as tarefas entre todas elas? Desta forma você estaria baixando cem páginas ao mesmo tempo e o trabalho
+estaria acabado muito antes! Esta é a ideia por trás da função "map" do MapReduce
+
+===***'''Função reduce'''***=== 
+Ideia central desta função é "reduzir" uma lista inteira para apenas um item
+com a função reduce, você transforma um array em um simples item.
+
+===***'''Filtro de Bloom'''***=== 
+São estruturas de dados probabilisticos que fornecem uma resposta que pode estar errada,
+mas que provalvelmente estará correta.
+Em vez de perguntar a uma hash, é possível perguntar a um filtro de bloom, se a
+URL já foi rastreada antes.
+
+- Falsos positivos são possíveis.
+- Falsos negativos não são possíveis.
+
+===***'''HyperLogLog'''***=== 
+Ele aproxima o número de elementos únicos em um conjunto. Assim como o filtro de bloom,
+ele não fornecerá uma resposta exata, mas se aproximará muito desta, usando apenas uma 
+fração da memória de que a tarefa necessitaria se fosse implementada de maneira tradicional
+
+===***'''Algortimos SHA'''***=== 
+é uma função hash, ele gera um hash, que é apenas uma string curta
+Faz a ligação entre string e string
+
+Muito utilizado para fazer comparação de senhas, ao utilizar apenas a ligação feita pelas string hash
+
+===***'''Prorgamação linear'''***=== 
+Programação linear é usada para maximizar algo em relação a um limite
+
+Todos os algoritmos de grafos podem ser feitos por meio de programação linear
+Programção linear é um framework muito mais geral, enquanto o problema de grafos 
+é apenas um subconjunto dela.
 

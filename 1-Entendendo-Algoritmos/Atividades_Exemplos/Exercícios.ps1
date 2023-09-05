@@ -64,3 +64,41 @@ Exercícios:
 6-Tomar Café da Manhã
 7-Trocar de Roupa
 '''
+
+6.5 '''C e A'''
+
+7.1 '''
+A- 8
+B- 60 
+C- Peso Negativo
+'''
+
+8.1 '''Tentaria colocar as menores caixas,
+e ir subindo o tamanho das caixas até preencher todo o caminhão; Não'''
+
+8.2 '''Tentaria ir nos lugares que iria me tomar menos tempo,
+assim ia conseguir frequentar mais lugares; Não'''
+
+8.3 '''NAO'''
+
+8.4 '''SIM'''
+
+8.5 '''SIM'''
+
+8.6 '''SIM'''
+
+8.7 '''SIM'''
+
+8.8 '''SIM'''
+
+9.1 '''SIM'''
+
+9.2 '''Agua, comida e camera'''
+
+9.3 '''3'''
+
+10.1 '''tentar usar a media dos valores'''
+
+10.2 '''tentaria aumentar o valor da nota final de avaliação'''
+
+10.3 '''baixo'''
