@@ -2,9 +2,14 @@
 1.12. Determine quais são os possíveis números (no intervalo fechado de 0 a  9)
 que se substituídos nos símbolos F, I, A, T
 torna a multiplicação a seguir
-verdadeira:  ×  IF  AT  FIAT  Os valores de F, I, A, T
-devem ser diferentes entre si.
-
+verdadeira:
+#
+      IF
+     ×AT
+    -----
+    FIAT
+#
+Os valores de F, I, A, T devem ser diferentes entre si.
 """
 
 import random

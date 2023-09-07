@@ -6,13 +6,13 @@ Qual o menor número de pesagens necessárias para descobrir
 o saco de moedas falsas?
 """
 saco_1 = 10
-saco_2 = 10
+saco_2 = 3
 saco_3 = 10
 saco_4 = 10
 saco_5 = 10
 saco_6 = 10
 saco_7 = 10
-saco_8 = 5
+saco_8 = 10
 saco_9 = 10
 saco_10 = 10
 
@@ -41,7 +41,7 @@ def verificar_saco_falso(total_sacos, quantidade_pesagem):
 
     if provavel_saco_falso < saco_peso_verdadeiro:
         return print(
-            f"Existe um salco falso com peso de {provavel_saco_falso},"
+            f"Existe um salco falso com peso de {provavel_saco_falso},\n"
             f"pesagens feitas: {quantidade_pesagem}"
         )
 
@@ -52,6 +52,12 @@ def verificar_saco_falso(total_sacos, quantidade_pesagem):
         montante_direita, pesagem2 = balanca(nova_lista_total[metade:])
         quantidade_pesagem += sum([pesagem1, pesagem2])
 
+        if montante_direita == montante_esquerda:
+            return print(
+                f"Não existe nenhum saco falso!!\n"
+                f"pesagens feitas: {quantidade_pesagem}"
+            )
+
         if (
             saco_peso_verdadeiro * len(nova_lista_total[:metade])
         ) != montante_esquerda:
@@ -61,7 +67,7 @@ def verificar_saco_falso(total_sacos, quantidade_pesagem):
         ) != montante_direita:
             nova_lista_total = nova_lista_total[metade:]
     return print(
-        f"Existe um salco falso com peso de {nova_lista_total},"
+        f"Existe um salco falso com peso de {nova_lista_total},\n"
         f"pesagens feitas: {quantidade_pesagem}"
     )
 
