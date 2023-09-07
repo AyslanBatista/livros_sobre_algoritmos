@@ -33,3 +33,26 @@ Atividade1_5.py
 1.7 '''
 Atividade1_7.py
 '''
+
+1.8 '''
+Atividade1_8.py
+'''
+
+1.9 '''
+não é valido dividir por (b-a) pois é como se estivesse dividindo por 0
+'''
+
+1.10 '''
+Creio que a operação de exemplo está errada, o simbolo deveria ser >= e não >
+
+Caso esteja errado, creio que seja um algoritimo de divisão,
+C é o valor quociente, A é o valor resto
+Atividade1_10.py
+'''
+1.11 '''
+2, 2, 9
+'''
+
+1.12 '''
+Atividade1_12.py
+'''
