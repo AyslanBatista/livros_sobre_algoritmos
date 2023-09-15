@@ -101,3 +101,18 @@ Atividade3_17.py
 3.18 '''
 Atividade3_18.py
 '''
+3.19 '''
+Atividade3_19.py
+'''
+3.20 '''
+Atividade3_20.py
+'''
+3.21 '''
+Atividade3_21.py
+'''
+3.22 '''
+Atividade3_22.py
+'''
+3.23 '''
+Atividade3_23.py
+'''
