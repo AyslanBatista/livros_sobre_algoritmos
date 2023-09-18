@@ -122,3 +122,15 @@ Atividade3_24.py
 3.25 '''
 Atividade3_25.py
 '''
+3.26 '''
+Atividade3_26.py
+'''
+3.27 '''
+Atividade3_27.py
+'''
+3.28 '''
+Atividade3_28.py
+'''
+3.29 '''
+Atividade3_29.py
+'''
