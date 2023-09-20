@@ -3,15 +3,19 @@ Elabore um fluxograma e um algoritmo em Portugol que permitam a  entrada
 de dez valores e calcule o produto de todos eles.
 """
 
-A = int(input("Informe o lado A: "))
-B = int(input("Informe o lado B: "))
-C = int(input("Informe o lado C: "))
+lista_numeros = []
+while len(lista_numeros) <= 10:
+    numero = input("informe um numero : ")
+    if not numero.replace(".", "").isdigit():
+        print("###### ERROR: informe apenas numeros - ######")
+        continue
+    elif numero == "0":
+        print("###### ERROR: informe valor maior que 0 - ######")
+        continue
+    lista_numeros.append(int(numero))
 
-if A < (B + C) and B < (A + C) and C < (A + B):
-    print(f"A: {A}   B: {B}  C: {C}\n" "Esses lados podem ser de um triângulo")
-else:
-    print(
-        f"A: {A}   B: {B}  C: {C}\n"
-        "Esses lados não podem ser de um triângulo"
-    )
+produto = 1
+for i in lista_numeros:
+    produto *= i
 
+print(f"{lista_numeros}\nProduto: {produto}")

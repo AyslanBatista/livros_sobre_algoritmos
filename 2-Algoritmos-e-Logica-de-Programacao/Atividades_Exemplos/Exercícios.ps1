@@ -134,3 +134,36 @@ Atividade3_28.py
 3.29 '''
 Atividade3_29.py
 '''
+3.30 '''
+Atividade3_30.py
+'''
+3.31 '''
+Atividade3_31.py
+'''
+3.32 '''
+Atividade3_32.py
+'''
+3.33 '''
+Atividade3_33.py
+'''
+3.34 '''
+Atividade3_34.py
+'''
+3.35 '''
+Atividade3_35.py
+'''
+3.36 '''
+Atividade3_36.py
+'''
+3.37 '''
+128
+'''
+3.38 '''
+Atividade3_38.py
+'''
+3.39 '''
+Atividade3_39.py
+'''
+3.40 '''
+Atividade3_39.py
+'''
