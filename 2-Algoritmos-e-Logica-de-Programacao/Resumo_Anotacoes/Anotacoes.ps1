@@ -167,3 +167,15 @@ Os símbolos que denotam o início e o fim de um fluxograma são representados p
 conhecidos como terminadores, contendo,  respectivamente, os textos Início e Fim.
 
 
+===================================================** ''' CAPITULO 4 ''' **===================================================
+===***'''Estruturas de Programação'''***===
+
+- Instruções sequenciais: representam ações imperativas, sem nenhum tipo de decisão. 
+
+- Instruções de decisão: representam um desvio no fluxo normal do algoritmo, conforme
+ o resultado de uma expressão lógica.
+
+- Instruções de repetição: representam a execução repetitiva de comandos existentes em um desvio
+no fluxo normal de um programa, governada pelo resultado de uma expressão lógica.
+
+
