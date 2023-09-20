@@ -165,5 +165,37 @@ Atividade3_38.py
 Atividade3_39.py
 '''
 3.40 '''
-Atividade3_39.py
+Atividade3_40.py
+'''
+3.41 '''
+Atividade3_41.py
+'''
+3.42 '''
+Atividade3_42.py
+'''
+3.43 '''
+Atividade3_43.py
+'''
+3.44 '''
+Atividade3_44.py
+'''
+3.45 '''
+Atividade3_45.py
+a) 381.73
+b) 4364.634000000001
+'''
+3.46 '''
+Atividade3_46.py
+'''
+3.47 '''
+Atividade3_47.py
+'''
+3.48 '''
+Atividade3_48.py
+'''
+3.49 '''
+Atividade3_49.py
+'''
+3.50 '''
+Atividade3_50.py
 '''
